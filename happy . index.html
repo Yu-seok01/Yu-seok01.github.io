@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이자카야 - Izakaya</title>
+    <style>
+        /* 전체 레이아웃 스타일 */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #faf8f4;
+        }
+
+        header {
+            background-color: #0c0b0b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        nav {
+            background-color: #3a3a3a;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+ 
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>찬마카세</h1>
+    </header>
+
+    <nav>
+        <a href="#menu">메뉴</a>
+        <a href="#reservation">예약</a>
+        <a href="#contact">연락처</a>
+    </nav>
+
+    <div class="container">
+        <!-- 메뉴 섹션 -->
+        <section id="menu" class="section">
+            <h2>📜 메뉴 소개</h2>
+            <div class="menu-item">
+                <span> * 모리아와세 - 33,000원</span>
+            </div>
+            <div class="menu-item">
+                <span> * 나베류 - 27,000원</span>
+            </div>
+            <div class="menu-item">
+                <span> * 요리류 - 25,000원</span>
+            </div>
+            <div class="menu-item">
+                <span> * 사케류 - 변동</span>
+            </div>
+        </section>
+
+        <!-- 예약 섹션 -->
+        <section id="reservation" class="section">
+            <h2>📅 예약하기</h2>
+            <form>
+                <label for="name">이름:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="phone">전화번호:</label><br>
+                <input type="text" id="phone" name="phone" required><br><br>
+
+                <label for="date">예약 날짜:</label><br>
+                <input type="date" id="date" name="date" required><br><br>
+
+                <label for="people">인원 수:</label><br>
+                <select id="people" name="people">
+                    <option value="2">2명</option>
+                    <option value="4">4명</option>
+                    <option value="6">6명</option>
+                    <option value="8">8명 이상</option>
+                </select><br><br>
+
+                <button type="submit">예약하기</button>
+            </form>
+        </section>
+
+        <!-- 연락처 섹션 -->
+        <section id="contact" class="section contact">
+            <h2>📞 연락처</h2>
+            <p>📍 서울 성동구 성수일로3길 12 1층</p>
+            <p>📱 0507-1307-8634</p>
+            <p>🕒 영업시간: 17시 ~ 03시</p>
+        </section>
+    </div>
+
+
+</body>
+</html>
